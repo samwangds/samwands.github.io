@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何通过Monkey解放双手咻一咻 | 山言两语</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="android,monkey test,支付宝,咻一咻," />
+  
+
+  <meta name="description" content="这两天早上10点支付宝咻一咻戳到手机都快破一个洞了还是毛都没有！手还疼得要命，又不甘心错过一丝丝得到敬业福的机会。作为一个程序猿，怎么能让阿里的程序猿耍得团团转呢，于是有了这篇文章。声明：本文章仅供娱乐及安卓爱好者开发学习交流之用，如果使用该文章中的代码，产生的包括但不局限于手机发热，死机，变砖，电脑罢工，支付宝封号，查水表等均与本人无关 ：） 
+
+prepare
+PC 装好android sd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何通过Monkey解放双手咻一咻">
+<meta property="og:url" content="http://isam.wang/2016/02/04/如何通过Monkey解放双手咻一咻/index.html">
+<meta property="og:site_name" content="山言两语">
+<meta property="og:description" content="这两天早上10点支付宝咻一咻戳到手机都快破一个洞了还是毛都没有！手还疼得要命，又不甘心错过一丝丝得到敬业福的机会。作为一个程序猿，怎么能让阿里的程序猿耍得团团转呢，于是有了这篇文章。声明：本文章仅供娱乐及安卓爱好者开发学习交流之用，如果使用该文章中的代码，产生的包括但不局限于手机发热，死机，变砖，电脑罢工，支付宝封号，查水表等均与本人无关 ：） 
+
+prepare
+PC 装好android sd">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-a95b15f4dab67ce8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-ca7420f35959754f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-6915e7725c02fbe5.gif?imageMogr2/auto-orient/strip">
+<meta property="og:updated_time" content="2016-03-11T07:17:20.813Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何通过Monkey解放双手咻一咻">
+<meta name="twitter:description" content="这两天早上10点支付宝咻一咻戳到手机都快破一个洞了还是毛都没有！手还疼得要命，又不甘心错过一丝丝得到敬业福的机会。作为一个程序猿，怎么能让阿里的程序猿耍得团团转呢，于是有了这篇文章。声明：本文章仅供娱乐及安卓爱好者开发学习交流之用，如果使用该文章中的代码，产生的包括但不局限于手机发热，死机，变砖，电脑罢工，支付宝封号，查水表等均与本人无关 ：） 
+
+prepare
+PC 装好android sd">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1181400-a95b15f4dab67ce8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+  
+
+  
+    <link rel="icon" href="/images/mountain_zh.ico">
+  
+
+  
+
+  <link href="/css/styles.css?v=16ddc105" rel="stylesheet">
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?19d10c44efe02c941e3ff1edb5a750c5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+
+  
+    <a href="#modal-one" class="toolbox-mobile">盒子</a>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/about/"
+            target="_self"
+            >
+            关于我
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#prepare"><span class="toc-text">prepare</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python脚本"><span class="toc-text">python脚本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#let’s-go-执行脚本命令"><span class="toc-text">let’s go 执行脚本命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#有图有真相"><span class="toc-text">有图有真相</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-如何通过Monkey解放双手咻一咻" class="article article-type-post" itemscope itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">如何通过Monkey解放双手咻一咻</h1>
+
+    <div class="article-meta">
+      <span>2016-02-04</span>
+
+      <span> | </span>
+
+      <span class="article-author">Sam Wang</span>
+
+      <span> | </span>
+
+      
+  <span class="article-category">
+    <a class="article-category-link" href="/categories/Android-笔记/">Android-笔记</a>
+  </span>
+
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <blockquote>
+<p>这两天早上10点支付宝咻一咻戳到手机都快破一个洞了还是毛都没有！手还疼得要命，又不甘心错过一丝丝得到敬业福的机会。作为一个程序猿，怎么能让阿里的程序猿耍得团团转呢，于是有了这篇文章。<br>声明：本文章仅供娱乐及安卓爱好者开发学习交流之用，如果使用该文章中的代码，产生的包括但不局限于手机发热，死机，变砖，电脑罢工，支付宝封号，查水表等均与本人无关 ：） </p>
+</blockquote>
+<h4 id="prepare"><a href="#prepare" class="headerlink" title="prepare"></a>prepare</h4><ol>
+<li>PC 装好android sdk，配制好环境变量 </li>
+<li>准备一台安卓手机，连上电脑，打开USB调试</li>
+<li>了解monkey测试的基本知识，不了解的可以看我的这篇<a href="http://www.jianshu.com/p/d414c2320536" target="_blank" rel="external">monkey test 使用笔记</a></li>
+</ol>
+<ul>
+<li>当然用其它自动化测试也可以，反正只需要简单的模拟点击操作</li>
+</ul>
+<h4 id="python脚本"><a href="#python脚本" class="headerlink" title="python脚本"></a>python脚本</h4><ol>
+<li>USB调试-打开指针位置，切到支付宝页面，按住咻一咻，看看手机状态栏上的信息，拿到咻咻咻按钮的坐标<br><img src="http://upload-images.jianshu.io/upload_images/1181400-a95b15f4dab67ce8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="USB调试-打开指针位置"></li>
+</ol>
+<ul>
+<li>编写脚本<br>新建文本文档，命名touch.py，写入下面这几行代码 </li>
+</ul>
+<figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span><span class="string"> sys</span></span><br><span class="line">from com.android.monkeyrunner <span class="keyword">import</span><span class="string"> MonkeyRunner as mr</span></span><br><span class="line">from com.android.monkeyrunner <span class="keyword">import</span><span class="string"> MonkeyDevice as md</span></span><br><span class="line">from com.android.monkeyrunner <span class="keyword">import</span><span class="string"> MonkeyImage as mi</span></span><br><span class="line"></span><br><span class="line">device = mr.waitForConnection()</span><br><span class="line"><span class="keyword">if</span> not <span class="attribute">device</span>:</span><br><span class="line">    print &gt;&gt; sys.stderr,<span class="string">"no device"</span></span><br><span class="line">    sys.exit(<span class="number">1</span>)</span><br><span class="line">	</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">1000000</span>):</span><br><span class="line">	device.touch(<span class="number">584</span>,<span class="number">1052</span>,md.DOWN_AND_UP)	</span><br><span class="line">	mr.sleep(<span class="number">0.2</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>for 就是循环点了后面的数设大一点，因为目前的情况来看，点个几万下估计不一定有个毛线</li>
+<li>touch当然就是点击了，584,1052是刚刚拿到的坐标</li>
+<li><code>mr.sleep(0.2)</code>表示一秒5点（等0.2秒，当然这个数字可以设大点）。</li>
+</ul>
+<h4 id="let’s-go-执行脚本命令"><a href="#let’s-go-执行脚本命令" class="headerlink" title="let’s go 执行脚本命令"></a>let’s go 执行脚本命令</h4><ol>
+<li>保证手机以正常连接并被电脑识别到可以通过<code>adb devices</code>检查</li>
+</ol>
+<ul>
+<li>打开支付宝咻一咻页面</li>
+<li>打开cmd然后执行<br><code>C:\Users\Sam&gt;monkeyrunner d:\monkey\touch.py</code><br>配制好SDK环境变量后，monkeyrunner可以在任何目录下运行，但是.py文件必须使用完整路径</li>
+<li><p>如果咻到什么东西，如果是没什么用的弹窗只要按返回键就会继续自动咻，如果需要领取，则先停止，只要在命令行界面按<code>ctrl c</code>，则会出现停止脚本的提示如下：<br><img src="http://upload-images.jianshu.io/upload_images/1181400-ca7420f35959754f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+<li><p>如果按终止操作再执行可能会报错，不懂为啥，只需要再终止一次，再执行脚本即可。</p>
+</li>
+</ul>
+<h4 id="有图有真相"><a href="#有图有真相" class="headerlink" title="有图有真相"></a>有图有真相</h4><p><img src="http://upload-images.jianshu.io/upload_images/1181400-6915e7725c02fbe5.gif?imageMogr2/auto-orient/strip" alt="图中可能是由于手机开录屏软件的原因有点卡"></p>
+<blockquote>
+<p>虽然是写好了，但是明天就回家了，电脑也懒得带回去，所以其实也用不上，不过算是复习了一下monkey的用法吧，下次有这种坑爹的活动再玩咯。不说了，收拾东西去了 - -。</p>
+</blockquote>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+    <a class="back-top" href="#">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">关闭</a>
+    </div>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于我
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="如何通过Monkey解放双手咻一咻" data-url="http://isam.wang/2016/02/04/如何通过Monkey解放双手咻一咻/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"samwang"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
+
+  
+
+</body>
+</html>

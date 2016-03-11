@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android-Studio-Tips | 山言两语</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="android,tips,android studio,安卓技巧," />
+  
+
+  <meta name="description" content="收集网上看到，或者自己总结的tips，未完待续，持续更新文中所提到的快捷键无特殊说明均为windows环境下，如果遇到快捷键无效，检查是否被占用，或者设置中，keymap相关键位是否设置兄弟篇 - android 开发tips - sdk api
+
+
+在常量(如：1，”XXX”)后输入.var回车可快速生成临时变量，输入.field 回车可快速生成全局变量 
+
+选中后可以使用 Extra 快捷键">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android-Studio-Tips">
+<meta property="og:url" content="http://isam.wang/2016/01/22/Android-Studio-Tips/index.html">
+<meta property="og:site_name" content="山言两语">
+<meta property="og:description" content="收集网上看到，或者自己总结的tips，未完待续，持续更新文中所提到的快捷键无特殊说明均为windows环境下，如果遇到快捷键无效，检查是否被占用，或者设置中，keymap相关键位是否设置兄弟篇 - android 开发tips - sdk api
+
+
+在常量(如：1，”XXX”)后输入.var回车可快速生成临时变量，输入.field 回车可快速生成全局变量 
+
+选中后可以使用 Extra 快捷键">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-053142c8e142011e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://camo.githubusercontent.com/98f603e75700d5099ab27205bdf8fc065c272ab2/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d3672446e386b4c375067772f56436c454d31336f594b492f41414141414141414e306f2f4a576964755731705773552f773531392d683236352d6e6f2f33342d636f6d7061726577697468636c6970626f6172642e676966">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-b56de291add6bb32?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-638260362d0bc43d?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-65cf75af3a8d2059?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-1094ce6c09a435fe?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-24f01ac84b4b82dd?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="https://camo.githubusercontent.com/c7529147fed09597ed30b559e560ae9e997f9987/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d70396b364a694e4c516d592f5642417765666c726b59492f41414141414141414e58382f67436175666a47626431632f773531342d683236342d6e6f2f32322d636f6e646974696f6e616c627265616b706f696e742e676966">
+<meta property="og:updated_time" content="2016-03-11T07:14:33.328Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android-Studio-Tips">
+<meta name="twitter:description" content="收集网上看到，或者自己总结的tips，未完待续，持续更新文中所提到的快捷键无特殊说明均为windows环境下，如果遇到快捷键无效，检查是否被占用，或者设置中，keymap相关键位是否设置兄弟篇 - android 开发tips - sdk api
+
+
+在常量(如：1，”XXX”)后输入.var回车可快速生成临时变量，输入.field 回车可快速生成全局变量 
+
+选中后可以使用 Extra 快捷键">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1181400-053142c8e142011e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+  
+
+  
+    <link rel="icon" href="/images/mountain_zh.ico">
+  
+
+  
+
+  <link href="/css/styles.css?v=16ddc105" rel="stylesheet">
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?19d10c44efe02c941e3ff1edb5a750c5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+
+  
+    <a href="#modal-one" class="toolbox-mobile">盒子</a>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/about/"
+            target="_self"
+            >
+            关于我
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#DEBUG-相关"><span class="toc-text">DEBUG 相关</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-Android-Studio-Tips" class="article article-type-post" itemscope itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Android-Studio-Tips</h1>
+
+    <div class="article-meta">
+      <span>2016-01-22</span>
+
+      <span> | </span>
+
+      <span class="article-author">Sam Wang</span>
+
+      <span> | </span>
+
+      
+  <span class="article-category">
+    <a class="article-category-link" href="/categories/Android-笔记/">Android-笔记</a>
+  </span>
+
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <blockquote>
+<p>收集网上看到，或者自己总结的tips，未完待续，持续更新<br>文中所提到的快捷键无特殊说明均为windows环境下，如果遇到快捷键无效，检查是否被占用，或者设置中，keymap相关键位是否设置<br><a href="http://www.jianshu.com/p/adfa519756b1" target="_blank" rel="external">兄弟篇 - android 开发tips - sdk api</a></p>
+</blockquote>
+<ol>
+<li><p>在常量(如：1，”XXX”)后输入<code>.var</code>回车可快速生成临时变量，输入<code>.field</code> 回车可快速生成全局变量 </p>
+</li>
+<li><p>选中后可以使用 Extra 快捷键重构为变量、方法等，这个可以在 Refactor -&gt; Extra 下看到。<br>ctrl+ alt+ v：变量<br>ctrl+ alt+ c：常量<br>ctrl+ alt+ f：域值<br>ctrl+ alt+ p：参数<br>ctrl+ alt+ m：方法<br>ctrl+ alt+ R：重命名</p>
+</li>
+<li><p>在可以循环遍历的变量后输入<code>.for</code> 或者<code>.fori .forr</code> 回车可快速遍历该对象</p>
+</li>
+<li><p>android studio 设置Keymap里面的<code>Fix doc comment</code>快捷键名，可以快速生成注释，点击变量名或者方法名，再按快捷键即可使用<br><img src="http://upload-images.jianshu.io/upload_images/1181400-053142c8e142011e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="android studio setting 截图"></p>
+</li>
+<li><p><code>live templates</code> 让你在android studio风一样的写代码 <a href="https://github.com/keyboardsurfer/idea-live-templates" target="_blank" rel="external">Github上的一个项目，整理了许多有用的模版，可以直接导入AndroidStudio使用</a><br>将下载下来的xml文件拷贝到下面的路径，如果不存在文件夹则新建，并重启android studio</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Live templates are stored <span class="keyword">in</span> <span class="keyword">the</span> following location:</span><br><span class="line">Windows: &lt;your home directory&gt;\.&lt;product <span class="built_in">name</span>&gt;&lt;<span class="built_in">version</span> <span class="built_in">number</span>&gt;\config\templates</span><br><span class="line">Linux: ~/.&lt;product <span class="built_in">name</span>&gt;&lt;<span class="built_in">version</span> <span class="built_in">number</span>&gt;/config/templates</span><br><span class="line">OS X: ~/Library/Preferences/&lt;product <span class="built_in">name</span>&gt;&lt;<span class="built_in">version</span> <span class="built_in">number</span>&gt;/templates</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li><p>多行编辑 使用<strong>Alt+鼠标左键</strong>（按住alt同时点左键拖动），或者选中代码，然后使用快捷键<strong>Shift+Alt+Insert﻿</strong></p>
+</li>
+<li><p>选中代码，右键，与剪切板中的代码比较<br><img src="https://camo.githubusercontent.com/98f603e75700d5099ab27205bdf8fc065c272ab2/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d3672446e386b4c375067772f56436c454d31336f594b492f41414141414141414e306f2f4a576964755731705773552f773531392d683236352d6e6f2f33342d636f6d7061726577697468636c6970626f6172642e676966" alt=""></p>
+</li>
+<li><p>跳到下一行，即使不在行尾的时候 <strong>Ctrl-Shift-Enter﻿</strong></p>
+</li>
+<li><p>设置全局参数，在Project的<code>build.gradle</code>中加入</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ext &#123;//定义project公用参数，在Modules 使用rootProject.ext.XX就能拿到相应对象</span><br><span class="line">    <span class="attr">compileSdkVersion</span> = <span class="number">23</span></span><br><span class="line">    <span class="attr">buildToolsVersion</span> = <span class="string">"23.0.1"</span></span><br><span class="line">    <span class="attr">supportLibVersion</span> = <span class="string">"23.1.1"</span></span><br><span class="line">...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在Module的<code>build.gradle</code>中把引用改为<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">android &#123;   </span><br><span class="line">     compileSdkVersion rootProject<span class="selector-class">.ext</span><span class="selector-class">.compileSdkVersion</span></span><br><span class="line">     buildToolsVersion rootProject<span class="selector-class">.ext</span><span class="selector-class">.buildToolsVersion</span></span><br><span class="line">     ...</span><br><span class="line">&#125;</span><br><span class="line">dependencies &#123; </span><br><span class="line">    compile <span class="string">"com.android.support:appcompat-v7:$&#123;supportLibVersion&#125;"</span></span><br><span class="line">    compile <span class="string">"com.android.support:design:$&#123;supportLibVersion&#125;"</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>此时如果参数进行修改则只需要更改Project的<code>build.gradle</code>更加方便和统一</p>
+<ul>
+<li><p>参数信息（Parameter Info）<br>描述：这个操作将显示和你在方法声明处写一样的参数列表，当你想看某个存在的方法的参数，这是一个很有用的操作。光标下的参数显示为黄色，如果没有参数显示黄色，意味着你的方法调用是无效的，很可能是某个参数分配不对。（例如一个浮点数赋值给了整型参数）。如果你正在写一个方法调用，突然离开编辑的地方，再返回的时候，输入一个逗号，就可以重新触发参数信息。<br>快捷键：<code>Cmd + P(OS X)、Ctrl +U (Windows/Linux)</code><br><img src="http://upload-images.jianshu.io/upload_images/1181400-b56de291add6bb32?imageMogr2/auto-orient/strip" alt=""></p>
+</li>
+<li><p>快速查看定义（Quick Definition Lookup）<br>描述：在当前界面查看一个方法或者类的具体实现<br>快捷键：<code>Alt + Space / Cmd + Y(OS X)、Ctrl + Shift + I(Windows/Linux)</code><br><img src="http://upload-images.jianshu.io/upload_images/1181400-638260362d0bc43d?imageMogr2/auto-orient/strip" alt=""></p>
+</li>
+<li><p>相关文件（Related File）<br>描述：该操作有助于在布局文件和Activity/Fragment之间轻松跳转。这也是一个快捷操作，在类名/布局顶端的左侧。<br>快捷键：<code>Ctrl + Cmd + Up(OS X)、Ctrl + Alt + (Windows/Linux)</code><br><img src="http://upload-images.jianshu.io/upload_images/1181400-65cf75af3a8d2059?imageMogr2/auto-orient/strip" alt=""></p>
+</li>
+<li><p>包裹代码（Surround With）<br>描述： 该操作可以用特定代码结构包裹住选中的代码块，通常是if语句，循环，try/catch语句或者runnable语句。<br>如果你没有选中任何东西，该操作会包裹当前一整行。<br>快捷键：<code>Cmd + Alt + T(OS X)、Ctrl + Alt + T(Windows/Linux)</code><br><img src="http://upload-images.jianshu.io/upload_images/1181400-1094ce6c09a435fe?imageMogr2/auto-orient/strip" alt=""></p>
+</li>
+</ul>
+<ol>
+<li>移除包裹代码（Unwrap Remove）<br>描述：该操作会移除周围的代码，它可能是一条if语句，一个while循环，一个try/catch语句甚至是一个runnable语句。该操作恰恰和包裹代码（Surround With）相反。<br>快捷键：<code>Cmd + Shift + Delete(OS X)、Ctrl + Shift + Delete(Windows/Linux)</code><br><img src="http://upload-images.jianshu.io/upload_images/1181400-24f01ac84b4b82dd?imageMogr2/auto-orient/strip" alt=""></li>
+</ol>
+<ul>
+<li><p>调用层级树弹窗（The Call Hierarchy Popup）<br>描述：该操作会给你展示 在一个方法的声明和调用之间所有可能的路径。<br>快捷键：<code>Ctrl + Alt + H</code></p>
+</li>
+<li><p>利用Gradle删除没有使用到的资源文件<br>在gradle中配置shrinkResources true，同时 minifyEnabled也要为true才行。</p>
+</li>
+</ul>
+<hr>
+<h3 id="DEBUG-相关"><a href="#DEBUG-相关" class="headerlink" title="DEBUG 相关"></a>DEBUG 相关</h3><ol>
+<li><p>debug的断点设置在循环里面，可以通过右键断点，来设置进入的条件<br><img src="https://camo.githubusercontent.com/c7529147fed09597ed30b559e560ae9e997f9987/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d70396b364a694e4c516d592f5642417765666c726b59492f41414141414141414e58382f67436175666a47626431632f773531342d683236342d6e6f2f32322d636f6e646974696f6e616c627265616b706f696e742e676966" alt=""></p>
+</li>
+<li><p>日志断点（Logging Breakpoints）<br>这是一种打印日志而不是暂停的断点，当你想打印一些日志信息但是不想添加log代码后重新部署项目，这是一个非常有用的操作。<br>调用：在断点上右键，取消<code>Suspend</code>的勾选，然后勾选上<code>Log evaluated Expression</code>，并在输入框中输入你要打印的日志信息。</p>
+</li>
+</ol>
+<ul>
+<li><p>显示当前运行点（Show Execution Point）<br>该操作会立刻把你的光标移回到当前debug处。<br>快捷键：（Debug时) <code>Alt + F10</code></p>
+</li>
+<li><p>临时断点（Temporary Breakpoints）<br>描述：通过该操作可以添加一个断点，这个断点会在第一次被命中的时候自动移除。<br>快捷键：Alt + 鼠标左键 点击代码左侧（鼠标）、Cmd + Alt +<br>Shift + F8(OS X)、Ctrl + Alt + Shift + F8(Windows/Linux)</p>
+</li>
+</ul>
+<p>to be continue…</p>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+    <a class="back-top" href="#">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">关闭</a>
+    </div>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于我
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="Android-Studio-Tips" data-url="http://isam.wang/2016/01/22/Android-Studio-Tips/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"samwang"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
+
+  
+
+</body>
+</html>

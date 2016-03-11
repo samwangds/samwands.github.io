@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>android-开发Tips---sdk-api | 山言两语</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="android,tips,安卓技巧,API," />
+  
+
+  <meta name="description" content="收集网上看到，或者自己总结的tips 
+
+view.isShown () 当view本身以及它的所有祖先们都是visible时，isShown（）才返回TRUE。而平常我们调用if(view.getVisibility() == View.VISIBLE)只是对view本身而不对祖先的可见性进行判断
+
+android.text.format.Formatter 方法 ：public static">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android-开发Tips---sdk-api">
+<meta property="og:url" content="http://isam.wang/2015/11/20/android-开发Tips---sdk-api/index.html">
+<meta property="og:site_name" content="山言两语">
+<meta property="og:description" content="收集网上看到，或者自己总结的tips 
+
+view.isShown () 当view本身以及它的所有祖先们都是visible时，isShown（）才返回TRUE。而平常我们调用if(view.getVisibility() == View.VISIBLE)只是对view本身而不对祖先的可见性进行判断
+
+android.text.format.Formatter 方法 ：public static">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-62c570276022d2d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1181400-ae85f080aecd4ba4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-03-11T07:18:18.335Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="android-开发Tips---sdk-api">
+<meta name="twitter:description" content="收集网上看到，或者自己总结的tips 
+
+view.isShown () 当view本身以及它的所有祖先们都是visible时，isShown（）才返回TRUE。而平常我们调用if(view.getVisibility() == View.VISIBLE)只是对view本身而不对祖先的可见性进行判断
+
+android.text.format.Formatter 方法 ：public static">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1181400-62c570276022d2d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+  
+
+  
+    <link rel="icon" href="/images/mountain_zh.ico">
+  
+
+  
+
+  <link href="/css/styles.css?v=16ddc105" rel="stylesheet">
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?19d10c44efe02c941e3ff1edb5a750c5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+
+  
+    <a href="#modal-one" class="toolbox-mobile">盒子</a>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/about/"
+            target="_self"
+            >
+            关于我
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-android-开发Tips---sdk-api" class="article article-type-post" itemscope itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">android-开发Tips---sdk-api</h1>
+
+    <div class="article-meta">
+      <span>2015-11-20</span>
+
+      <span> | </span>
+
+      <span class="article-author">Sam Wang</span>
+
+      <span> | </span>
+
+      
+  <span class="article-category">
+    <a class="article-category-link" href="/categories/Android-笔记/">Android-笔记</a>
+  </span>
+
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>收集网上看到，或者自己总结的tips </p>
+<ol>
+<li><p><code>view.isShown ()</code> 当view本身以及它的所有祖先们都是visible时，isShown（）才返回TRUE。<br>而平常我们调用<code>if(view.getVisibility() == View.VISIBLE)</code>只是对view本身而不对祖先的可见性进行判断</p>
+</li>
+<li><p><code>android.text.format.Formatter</code> 方法 ：<code>public static String formatFileSize(Context context, long number)</code><br>number 的单位是B，返回如：3.33MB  (B-&gt;KB-&gt;MB-&gt;GB-&gt;TB-&gt;PB)</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Suffix added to a number to signify size in bytes. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">"byteShort"</span>&gt;</span>B<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Suffix added to a number to signify size in kilobytes. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">"kilobyteShort"</span>&gt;</span>KB<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Suffix added to a number to signify size in megabytes. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">"megabyteShort"</span>&gt;</span>MB<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Suffix added to a number to signify size in gigabytes. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">"gigabyteShort"</span>&gt;</span>GB<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Suffix added to a number to signify size in terabytes. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">"terabyteShort"</span>&gt;</span>TB<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Suffix added to a number to signify size in petabytes. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">"petabyteShort"</span>&gt;</span>PB<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>android.media.ThumbnailUtils</code>类，用来获取媒体（图片、视频）缩略图</p>
+</li>
+<li><code>String.format(String format, Object... args)</code> 与 <code>Context.getString(int resId, Object... formatArgs)</code>用于格式化strings.xml中的字符串</li>
+<li><code>TextView.append(CharSequence text)</code> 和 <code>append(CharSequence text, int start, int end)</code>方法，直接在Textview后面追加字符串</li>
+<li><code>DecimalFormat</code>类，用于字串格式化包括指定位数、百分数、科学计数法等</li>
+<li><p><code>android.util.Pair</code>类，封装了两个对象的类(用处自己想吧)</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public Pair(F <span class="keyword">first</span>, S <span class="keyword">second</span>) &#123;    </span><br><span class="line">       this.<span class="keyword">first</span> = <span class="keyword">first</span>;    </span><br><span class="line">       this.<span class="keyword">second</span> = <span class="keyword">second</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安卓的单元测试类 <code>ApplicationTestCase&lt;Application&gt;</code>自带mContext属性,<code>InstrumentationTestCase</code>可以跳转到一个Activity进行测试</p>
+</li>
+<li>Android 软键盘盖住输入框或者布局的解决办法<ul>
+<li>方法一：在你的activity中的oncreate中setContentView之前写上这个代码’getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);’</li>
+<li>方法二：在项目的AndroidManifest.xml文件中界面对应的<activity>里加入<code>android:windowSoftInputMode=&quot;stateVisible|adjustResize&quot;</code>，这样会让屏幕整体上移。如果加上的是<code>android:windowSoftInputMode=&quot;adjustPan&quot;</code>这样键盘就会覆盖屏幕。</activity></li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>TextView的标准字体<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Display4"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Display3"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Display2"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Display1"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Headline"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Title"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Subhead"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Body2"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Body1"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Caption"</span></span><br><span class="line"><span class="attr">style</span>=<span class="string">"@style/TextAppearance.AppCompat.Button"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1181400-62c570276022d2d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="样式效果"></p>
+<ul>
+<li><p><code>android:clipToPadding</code>控件的绘制区域是否在padding里面。默认为true。如果你设置了此属性值为false,可以实现 ListView顶部默认有一个间距，向上滑动后，间距消失。（PS:如果使用margin或padding，都不能实现这个效果。加一个headerView又显得大材小用，而且过于麻烦。此处的clipToPadding配合paddingTop效果就刚刚好。）</p>
+</li>
+<li><p>类似上面<code>android:clipChildren</code>的意思：否限制子View在其范围内。在做动画或者一些特别的布局是会起到非常神奇的作用 </p>
+</li>
+<li><p>Android5.0以后Theme的一些颜色<br><img src="http://upload-images.jianshu.io/upload_images/1181400-ae85f080aecd4ba4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+</ul>
+<p>to be continue…</p>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+    <a class="back-top" href="#">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">关闭</a>
+    </div>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于我
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="android-开发Tips---sdk-api" data-url="http://isam.wang/2015/11/20/android-开发Tips---sdk-api/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
+
+
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"samwang"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+
+
+  </div>
+
+  
+
+</body>
+</html>
